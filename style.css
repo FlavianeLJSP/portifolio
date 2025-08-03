@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #080708;
+}
+
+header {
+  background-color: #e909c4;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header .destaque {
+  color: #f3f5f8;
+}
+
+header .animado {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ebe8e8;
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e909c4;
+  display: inline-block;
+  color: #e909c4;
+}
+
+.projeto {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid #0d6efd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.projeto a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #0d1117;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+#tecnologias {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.carrossel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.carrossel-inner {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.tecnologia {
+  flex: 0 0 auto;
+  background: #e909c4;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+#sobre {
+  padding: 3rem 1rem;
+  background-color: #f0f4f8;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.sobre-texto p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Se quiser adicionar uma imagem futuramente */
+.sobre-foto img {
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#curriculo {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+#curriculo a {
+  color: #633ee6;
+  font-weight: bold;
+  text-decoration: none;
+}
+.carrossel-projeto {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.carrossel-imagens {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: max-content;
+}
+
+.carrossel-imagens img {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.carrossel-projeto button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(247, 161, 208, 0.5);
+  color: #e92899;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.carrossel-projeto .anterior {
+  left: 5px;
+}
+
+.carrossel-projeto .proximo {
+  right: 5px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ou space-between se quiser espaçado */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #e909c4;
+  color: white;
+  text-align: left;
+}
+
+.foto-perfil img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.texto-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.texto-header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.3rem;
+  color: white;
+}
