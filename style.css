@@ -148,16 +148,16 @@ footer {
 
 .carrossel-imagens {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
   width: max-content;
 }
 
 .carrossel-imagens img {
-  width: 100%;
+  width: flex;
   max-width: 300px;
   margin-right: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .carrossel-projeto button {
@@ -212,4 +212,13 @@ footer {
   margin: 0.5rem 0 0;
   font-size: 1.3rem;
   color: white;
+}
+
+.carrossel-imagens img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrossel-imagens img:hover {
+  transform: scale(1.1); /* aumenta 10% */
+  z-index: 2;
 }
