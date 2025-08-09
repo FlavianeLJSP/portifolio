@@ -153,11 +153,13 @@ footer {
 }
 
 .carrossel-imagens img {
-  width: flex;
-  max-width: 300px;
+  width: 300px;
+  max-width: 100%;
+  flex-shrink: 0;
   margin-right: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 .carrossel-projeto button {
@@ -221,4 +223,7 @@ footer {
 .carrossel-imagens img:hover {
   transform: scale(1.1); /* aumenta 10% */
   z-index: 2;
+}
+.espaco-vertical {
+  margin-top: 2rem;
 }
