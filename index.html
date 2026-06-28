@@ -3,141 +3,245 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio - Flaviane</title>
+  <title>Portfólio | Flaviane Lima</title>
+  <meta name="description" content="Portfólio de Flaviane Lima De Pina — Estudante de Engenharia da Computação, desenvolvedora Python, Django, JavaScript e React.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-  <div class="header-container">
-    <div class="foto-perfil">
-      <img src="imagens/flaviane.jpg" alt="Foto de Flaviane Lima De Pina">
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Flaviane<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-    <div class="texto-header">
-      <h1>Flaviane Lima De Pina</h1>
-      <p>Estudante de Engenharia da Computação</p>
+  </nav>
+
+  <header id="home">
+    <div class="header-container">
+      <div class="foto-perfil">
+        <img src="imagens/flaviane.jpg" alt="Foto de Flaviane Lima De Pina">
+      </div>
+      <div class="texto-header">
+        <p class="header-saudacao">Olá, eu sou</p>
+        <h1>Flaviane Lima <span class="destaque">De Pina</span></h1>
+        <p class="header-cargo">
+          <span id="typing-text"></span><span class="cursor-blink">|</span>
+        </p>
+        <div class="header-btns">
+          <a href="#projetos" class="btn btn-primary">
+            <i class="fas fa-code"></i> Ver Projetos
+          </a>
+          <a href="docs/Flaviane_Lima_Curriculo.pdf" download class="btn btn-outline">
+            <i class="fas fa-download"></i> Baixar CV
+          </a>
+        </div>
+        <div class="header-sociais">
+          <a href="https://github.com/FlavianeLJSP" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/flaviane-lima-de-jesus-da-silva" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:eng.compflavianelima@yahoo.com" aria-label="E-mail">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-</header>
+    <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </header>
 
-
-  <section id="sobre">
-  <h2>Sobre Mim</h2>
-  <div class="sobre-container">
-    <div class="sobre-texto">
- 
-  </div>
-      <p>
-  Olá! Me chamo <strong>Flaviane Lima De Pina</strong>, sou estudante de Engenharia da Computação pela UNIVESP, atualmente no 7º semestre. Comecei fazendo alguns cursos livres na área de tecnologia e acabei me apaixonando por esse universo cheio de possibilidades.
-</p>
-
-<p>
-  Movida pela curiosidade de entender como as coisas funcionam por trás dos sistemas, percebi que estudar tecnologia não era apenas uma curiosidade, mas sim aquilo que eu realmente queria para a minha vida — e aqui estou eu, determinada a seguir nessa jornada.
-</p>
-
-      <p>
-        Estou em busca da minha primeira oportunidade como estagiário na área de desenvolvimento, onde possa aplicar e evoluir meus conhecimentos em <strong>Python, JavaScript, HTML, CSS, Django, Node.js</strong> e muito mais.
-      </p>
-      <p>
-        Me considero uma pessoa <strong>dedicada, focada e autodidata</strong>. Gosto de resolver problemas, trabalhar em equipe e estou sempre buscando aprender algo novo.
-      </p>
-      <p>
-        Tenho interesse especial por <strong>desenvolvimento web, automação, backend e software embarcado</strong>. Acredito no poder da tecnologia para transformar vidas e estou animado para fazer parte dessa mudança!
-      </p>
-      <p>
-  Também venho estudando inglês com foco em leitura e comunicação técnica. Já consigo compreender bem documentações, artigos e me comunicar em situações básicas da área. Estou constantemente me desenvolvendo para alcançar fluência e atuar em ambientes que utilizam o idioma.
-</p
-
-</section>
-
-  <section id="tecnologias">
-  <h2>Minhas Tecnologias</h2>
-  <div class="carrossel">
-    <div class="carrossel-inner">
-      <div class="tecnologia">Python</div>
-      <div class="tecnologia">JavaScript</div>
-      <div class="tecnologia">Django</div>
-      <div class="tecnologia">Node.js</div>
-      <div class="tecnologia">TypeScript</div>
-      <div class="tecnologia">MySQL</div>
-      <div class="tecnologia">HTML5</div>
-      <div class="tecnologia">CSS3</div>
-      <div class="tecnologia">PHP</div>
-      <div class="tecnologia">Java</div>
-      <!-- Repetição para loop infinito visual -->
-      <div class="tecnologia">Python</div>
-      <div class="tecnologia">JavaScript</div>
-      <div class="tecnologia">Django</div>
-      <div class="tecnologia">Node.js</div>
+  <section id="sobre" class="reveal">
+    <div class="inner">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="sobre-container">
+        <div class="sobre-texto">
+          <p>
+            Olá! Me chamo <strong>Flaviane Lima De Pina</strong>, sou estudante de Engenharia da Computação pela UNIVESP, atualmente no 7º semestre. Tudo começou com cursos livres na área de tecnologia — e logo me apaixonei por este universo cheio de possibilidades.
+          </p>
+          <p>
+            Movida pela curiosidade de entender como os sistemas funcionam por dentro, percebi que tecnologia não era apenas um interesse passageiro, mas sim o que eu realmente queria para a minha vida.
+          </p>
+          <p>
+            Estou em busca da minha primeira oportunidade como <strong>estagiária</strong> em desenvolvimento, onde possa aplicar e expandir meus conhecimentos em <strong>Python, JavaScript, Django, React</strong> e muito mais.
+          </p>
+          <p>
+            Me considero uma pessoa <strong>dedicada, focada e autodidata</strong>. Gosto de resolver problemas, colaborar em equipe e estou sempre buscando aprender algo novo.
+          </p>
+          <p>
+            Tenho interesse especial em <strong>desenvolvimento web, backend e automação</strong>. Também venho estudando inglês com foco em leitura técnica — já consigo compreender bem documentações e artigos da área.
+          </p>
+        </div>
+        <div class="sobre-cards">
+          <div class="info-card">
+            <i class="fas fa-graduation-cap"></i>
+            <span>7º Semestre</span>
+            <small>Eng. Computação · UNIVESP</small>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-laptop-code"></i>
+            <span>Dev Web</span>
+            <small>Python · JavaScript</small>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-globe"></i>
+            <span>Inglês</span>
+            <small>Leitura Técnica</small>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-search"></i>
+            <span>Disponível</span>
+            <small>Buscando Estágio</small>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
-  <section id="projetos">
-    <h2>Projetos</h2>
-
-    <div class="projeto">
-      <h3>Projeto Django</h3>
-      <p>Um sistema web desenvolvido com Python, Django, HTML e CSS.</p>
-      <a href="https://github.com/FlavianeLJSP/pythonProject3/tree/main/pythonProject3/ondelivery" target="_blank">Ver no GitHub</a>
-    </div>
-
-     <div class="carrossel-projeto">
-    <button class="anterior">&#10094;</button>
-    <div class="carrossel-imagens">
-      <img src="imagens/pagina_inicio.png" alt="Tela 1">
-      <img src="imagens/pagina_menu.png" alt="Tela 2">
-      <img src="imagens/acompanhar_pedido.png" alt="Tela 3">
-      <img src="imagens/pagina_cadastro.png" alt="Tela 4">
-      <img src="imagens/finalizar_pedido.png" alt="Tela 5">
-      <img src="imagens/pagina_carrinho.png" alt="Tela 6">
-    </div>
-    <button class="proximo">&#10095;</button>
-  </div>
-</div>
-
-<div class="projeto">
-      <h3>Projeto React</h3>
-      <p>Um sistema de conversão de moedas com gráfico e layout claro ou escuro.</p>
-      <a href="https://github.com/FlavianeLJSP/conversor-moedas" target="_blank">Ver no GitHub</a>
-    </div>
-  <div class="carrossel-projeto">
-    <button class="anterior">&#10094;</button>
-    <div class="carrossel-imagens">
-      <img src="imagens/conversor1.png" alt="Tela 1">
-      <img src="imagens/conversor2.png" alt="Tela 2">
-      <img src="imagens/conversor3.png" alt="Tela 3">
-      <img src="imagens/conversor4.png" alt="Tela 4">
-     </div>
-    <button class="proximo">&#10095;</button>
-  </div>
-</div>
-
-<div class="div1">   </div>
-<div class="espaco-vertical"></div>
-<div class="div2">   </div>
-
-
-    <div class="projeto">
-      <h3>Em breve...</h3>
-      <p>Mais projetos incríveis estão a caminho!</p>
-    </div>
-</section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <p><strong>GitHub:</strong> <a href="https://github.com/FlavianeLJSP" target="_blank">@FlavianeLJSP</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/flaviane-lima-de-jesus-da-silva" target="_blank">@flaviane-lima-de-jesus-da-silva</a></p>
-    <p><strong>Email:</strong> eng.compflavianelima@yahoo.com</p>
   </section>
-  <section id="curriculo">
-  <h2>Currículo</h2>
-  <p>Você pode <a href="docs/Flaviane_Lima_Curriculo.pdf" download target="_blank">baixar meu currículo aqui</a>.</p>
-</section>
 
+  <section id="tecnologias" class="reveal">
+    <h2 class="section-title centrado">Tecnologias</h2>
+    <div class="carrossel">
+      <div class="carrossel-inner">
+        <div class="tecnologia"><i class="fab fa-python"></i> Python</div>
+        <div class="tecnologia"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="tecnologia"><i class="fab fa-react"></i> React</div>
+        <div class="tecnologia"><span class="tech-badge">Dj</span> Django</div>
+        <div class="tecnologia"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="tecnologia"><span class="tech-badge">TS</span> TypeScript</div>
+        <div class="tecnologia"><span class="tech-badge">SQL</span> MySQL</div>
+        <div class="tecnologia"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="tecnologia"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="tecnologia"><i class="fab fa-php"></i> PHP</div>
+        <div class="tecnologia"><i class="fab fa-java"></i> Java</div>
+        <!-- Repetição para loop infinito -->
+        <div class="tecnologia"><i class="fab fa-python"></i> Python</div>
+        <div class="tecnologia"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="tecnologia"><i class="fab fa-react"></i> React</div>
+        <div class="tecnologia"><span class="tech-badge">Dj</span> Django</div>
+        <div class="tecnologia"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="tecnologia"><span class="tech-badge">TS</span> TypeScript</div>
+        <div class="tecnologia"><span class="tech-badge">SQL</span> MySQL</div>
+        <div class="tecnologia"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="tecnologia"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="tecnologia"><i class="fab fa-php"></i> PHP</div>
+        <div class="tecnologia"><i class="fab fa-java"></i> Java</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="reveal">
+    <h2 class="section-title">Projetos</h2>
+
+    <div class="projeto-card">
+      <div class="projeto-info">
+        <div class="projeto-numero">01</div>
+        <h3>OnDelivery</h3>
+        <p>Sistema web completo de delivery de alimentos com cadastro de usuários, cardápio interativo, carrinho de compras, finalização e acompanhamento de pedidos em tempo real.</p>
+        <div class="projeto-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <a href="https://github.com/FlavianeLJSP/pythonProject3/tree/main/pythonProject3/ondelivery" target="_blank" class="btn-projeto">
+          <i class="fab fa-github"></i> Ver no GitHub
+        </a>
+      </div>
+      <div class="carrossel-projeto">
+        <button class="anterior" aria-label="Imagem anterior">&#10094;</button>
+        <div class="carrossel-imagens">
+          <img src="imagens/pagina_inicio.png" alt="Página inicial do OnDelivery">
+          <img src="imagens/pagina_menu.png" alt="Cardápio">
+          <img src="imagens/acompanhar_pedido.png" alt="Acompanhar pedido">
+          <img src="imagens/pagina_cadastro.png" alt="Página de cadastro">
+          <img src="imagens/finalizar_pedido.png" alt="Finalizar pedido">
+          <img src="imagens/pagina_carrinho.png" alt="Carrinho de compras">
+        </div>
+        <button class="proximo" aria-label="Próxima imagem">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="projeto-card">
+      <div class="projeto-info">
+        <div class="projeto-numero">02</div>
+        <h3>Conversor de Moedas</h3>
+        <p>Aplicação React para conversão de moedas em tempo real, com gráfico histórico interativo e alternância entre tema claro e escuro.</p>
+        <div class="projeto-tags">
+          <span class="tag">React</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">API REST</span>
+          <span class="tag">CSS3</span>
+        </div>
+        <a href="https://github.com/FlavianeLJSP/conversor-moedas" target="_blank" class="btn-projeto">
+          <i class="fab fa-github"></i> Ver no GitHub
+        </a>
+      </div>
+      <div class="carrossel-projeto">
+        <button class="anterior" aria-label="Imagem anterior">&#10094;</button>
+        <div class="carrossel-imagens">
+          <img src="imagens/conversor1.png" alt="Conversor de Moedas — Tela principal">
+          <img src="imagens/conversor2.png" alt="Conversor de Moedas — Gráfico histórico">
+          <img src="imagens/conversor3.png" alt="Conversor de Moedas — Tema claro">
+          <img src="imagens/conversor4.png" alt="Conversor de Moedas — Tema escuro">
+        </div>
+        <button class="proximo" aria-label="Próxima imagem">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="projeto-em-breve">
+      <i class="fas fa-rocket"></i>
+      <h3>Em breve...</h3>
+      <p>Novos projetos estão sendo desenvolvidos. Fique de olho!</p>
+    </div>
+  </section>
+
+  <section id="contato" class="reveal">
+    <div class="inner">
+      <h2 class="section-title centrado">Vamos Conversar?</h2>
+      <p class="contato-desc">Estou disponível para oportunidades de estágio e colaborações. Entre em contato!</p>
+      <div class="contato-grid">
+        <a href="https://github.com/FlavianeLJSP" target="_blank" class="contato-card">
+          <i class="fab fa-github"></i>
+          <strong>GitHub</strong>
+          <span>@FlavianeLJSP</span>
+        </a>
+        <a href="https://www.linkedin.com/in/flaviane-lima-de-jesus-da-silva" target="_blank" class="contato-card">
+          <i class="fab fa-linkedin"></i>
+          <strong>LinkedIn</strong>
+          <span>Flaviane Lima</span>
+        </a>
+        <a href="mailto:eng.compflavianelima@yahoo.com" class="contato-card">
+          <i class="fas fa-envelope"></i>
+          <strong>E-mail</strong>
+          <span>eng.compflavianelima<br>@yahoo.com</span>
+        </a>
+        <a href="docs/Flaviane_Lima_Curriculo.pdf" download class="contato-card">
+          <i class="fas fa-file-pdf"></i>
+          <strong>Currículo</strong>
+          <span>Baixar PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Flaviane Lima De Pina. Todos os direitos reservados.</p>
+    <p>Desenvolvido com <i class="fas fa-heart"></i> por <strong>Flaviane Lima De Pina</strong></p>
+    <p class="footer-copy">© 2025 Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
